@@ -79,8 +79,7 @@ const IndexPage = () => {
           <span style={headingAccentStyles}>Computer Engineer</span>
         </h1>
         <p style={paragraphStyles}>
-          I am a computer engineer with a bachelors degree from Umm Al-Qura University. "I am experienced in various programming languages and frameworks, and I am passionate about creating efficient, scalable, and maintainable software solutions."
-        </p>
+          I am a computer engineer with a bachelors degree from Umm Al-Qura University. Seeking a challenging position to expand and utilize my skills and knowledge, Flexible to work in any environment as required.        </p>
         <h2>Projects</h2>
         <ul style={listStyles}>
           {/* Add your projects here */}
