@@ -74,18 +74,18 @@ const IndexPage = () => {
       <div style={backgroundStyles}></div>
       <main style={pageStyles}>
         <h1 style={headingStyles}>
-          John Doe
+          Nasser Al-Asmari
           <br />
           <span style={headingAccentStyles}>Computer Engineer</span>
         </h1>
         <p style={paragraphStyles}>
-          I am a computer engineer with a degree in XYZ from ABC University. I am experienced in various programming languages and frameworks, and I am passionate about creating efficient, scalable, and maintainable software solutions.
+          I am a computer engineer with a bachelors degree from Umm Al-Qura University. "I am experienced in various programming languages and frameworks, and I am passionate about creating efficient, scalable, and maintainable software solutions."
         </p>
         <h2>Projects</h2>
         <ul style={listStyles}>
           {/* Add your projects here */}
           <li style={listItemStyles}>
-            <a style={linkStyle} href="https://github.com/username/project">
+            <a style={linkStyle} href="https://github.com/sudoNass/autonomous-delivery">
               Project 1
             </a>
             <p style={descriptionStyle}>
@@ -93,7 +93,7 @@ const IndexPage = () => {
             </p>
           </li>
           <li style={listItemStyles}>
-            <a style={linkStyle} href="https://github.com/username/project">
+            <a style={linkStyle} href="https://github.com/sudoNass/S2T-ESP32">
               Project 2
             </a>
             <p style={descriptionStyle}>
@@ -108,4 +108,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>John Doe - Computer Engineer</title>
+export const Head = () => <title>Nasser Al-Asmari - Computer Engineer</title>
