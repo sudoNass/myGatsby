@@ -1,121 +1,140 @@
 import * as React from "react";
 
 const pageStyles = {
-  color: "#232129",
-  padding: 96,
+  color: "#fff",
+  backgroundColor: "#1a1a1a",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  height: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  padding: "0 10%",
 }
+
 const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
+  fontSize: "4rem",
+  margin: "0 0 2rem",
+  textAlign: "center",
+  textTransform: "uppercase",
+  letterSpacing: "0.3rem",
 }
 
-const linkStyle = {
-  color: "#8954A8",
+const subheadingStyles = {
+  fontSize: "1.5rem",
+  margin: "0 0 4rem",
+  textAlign: "center",
   fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
 }
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
+const iconStyles = {
+  display: "inline-block",
+  width: "2rem",
+  height: "2rem",
+  marginRight: "1rem",
+  verticalAlign: "middle",
 }
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom:0,
-  lineHeight: 1.25,
+const sectionStyles = {
+  margin: "4rem 0",
+  padding: "2rem",
+  borderRadius: "0.5rem",
+  backgroundColor: "#333",
+  maxWidth: "50rem",
+  width: "100%",
 }
 
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
+const sectionHeadingStyles = {
+  fontSize: "2Here's the rest of the code:
+
+```jsx
+rem",
+  margin: "0 0 2rem",
+  textTransform: "uppercase",
+  letterSpacing: "0.2rem",
+  textAlign: "center",
+}
+
+const sectionSubheadingStyles = {
+  fontSize: "1.25rem",
+  margin: "0 0 4rem",
+  textAlign: "center",
+  fontWeight: "bold",
+}
+
+const listItemStyles = {
+  fontSize: "1.25rem",
+  margin: "0 0 2rem",
+  display: "flex",
+  alignItems: "center",
+}
+
+const listIconStyles = {
+  ...iconStyles,
+  width: "1.5rem",
+  height: "1.5rem",
+  marginRight: "0.5rem",
+}
+
+const listTextStyles = {
+  fontWeight: "bold",
 }
 
 const IndexPage = () => {
-  const name = "Your Name";
-  const email = "your.email@example.com";
-  const degree = "Your Degree";
-  const projects = [
-    {
-      name: "Project 1",
-      description: "Description of Project 1"
-    },
-    {
-      name: "Project 2",
-      description: "Description of Project 2"
-    }
-  ];
-
   return (
     <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        {name}
-        <br />
-        <span style={headingAccentStyles}>— Online Resume</span>
-      </h1>
-      <p style={paragraphStyles}>
-        Email: {email}
-      </p>
-      <h2 style={headingStyles}>Education:</h2>
-      <p style={paragraphStyles}>{degree}</p>
-      <h2 style={headingStyles}>Projects:</h2>
-      <ul style={listStyles}>
-        {projects.map((project, index) => (
-          <li key={index} style={{ ...listItemStyles, color: linkStyle.color }}>
-            <span>
-              <h3 style={{ ...linkStyle, marginBottom: 0 }}>{project.name}</h3>
-             <p style={descriptionStyle}>{project.description}</p>
-            </span>
+      <h1 style={headingStyles}>John Doe</h1>
+      <h2 style={subheadingStyles}>Computer Engineer</h2>
+      <section style={sectionStyles}>
+        <h3 style={sectionHeadingStyles}>
+          <i className="bi bi-award" style={listIconStyles}></i>Education
+        </h3>
+        <p style={sectionSubheadingStyles}>Bachelor of Science in Computer Engineering</p>
+        <ul>
+          <li style={listItemStyles}>
+            <i className="bi bi-check" style={listIconStyles}></i>
+            <span style={listTextStyles}>University of Engineering and Technology, Lahore</span>
           </li>
-        ))}
-      </ul>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to update your online resume. 😎
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-      </ul>
+        </ul>
+      </section>
+      <section style={sectionStyles}>
+        <h3 style={sectionHeadingStyles}>
+          <i className="bi bi-code-slash" style={listIconStyles}></i>Skills
+        </h3>
+        <p style={sectionSubheadingStyles}>Programming Languages</p>
+        <ul>
+          <li style={listItemStyles}>
+            <i className="bi bi-check" style={listIconStyles}></i>
+            <span style={listTextStyles}>C, C++, Java, Python</span>
+          </li>
+        </ul>
+        <p style={sectionSubheadingStyles}>Tools and Frameworks</p>
+        <ul>
+          <li style={listItemStyles}>
+            <i className="bi bi-check" style={listIconStyles}></i>
+            <span style={listTextStyles}>Arduino, Raspberry Pi, React, Node.js</span>
+          </li>
+        </ul>
+      </section>
+      <section style={sectionStyles}>
+        <h3 style={sectionHeadingStyles}>
+          <i className="bi bi-briefcase" style={listIconStyles}></i>Experience
+        </h3>
+        <ul>
+          <li style={listItemStyles}>
+            <i className="bi bi-briefcase" style={listIconStyles}></i>
+            <span style={listTextStyles}>Software Engineer, XYZ Company</span>
+          </li>
+          <li style={listItemStyles}>
+            <i className="bi bi-briefcase" style={listIconStyles}></i>
+            <span style={listTextStyles}>Intern, ABC Company</span>
+          </li>
+        </ul>
+      </section>
     </main>
   )
 }
 
 export default IndexPage
 
-export const Head = () => <title>Online Resume</title>
+export const Head = () => <title>John Doe - Computer Engineer</title>
