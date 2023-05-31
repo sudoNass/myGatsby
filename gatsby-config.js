@@ -7,4 +7,9 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [],
-}
+},
+  resolve: {
+    alias: {
+      'styled-components': require.resolve('styled-components'),
+    },
+  }
