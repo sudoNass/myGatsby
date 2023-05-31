@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-expressions
+export default null;
+
 import React, { useEffect } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
