@@ -3,13 +3,16 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Nasser's resume`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "Nasser's resume",
+    siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: [],
-},
+  plugins: [
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-react-helmet",
+  ],
   resolve: {
     alias: {
       'styled-components': require.resolve('styled-components'),
     },
-  }
+  },
+};
