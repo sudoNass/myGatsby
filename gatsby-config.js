@@ -14,5 +14,4 @@ module.exports = {
     alias: {
       'styled-components': require.resolve('styled-components'),
     },
-  },
-};
+  };
